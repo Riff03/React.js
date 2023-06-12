@@ -1,4 +1,5 @@
 import styles from './App.module.css'
+import Button from './components/Button'
 function App() {
   return (
     <>
@@ -19,7 +20,9 @@ function App() {
         </div>
 
       </nav>
-      <h1>Praktikum A2 Pagi</h1>
+      <h1 className='text-5xl hover:font-bold hover:cursor-pointer active:underline'>Praktikum A2 Pagi</h1>
+      <Button className="bg-cyan-400 text-white hover:bg-cyan-600">buton buton</Button>
+      <Button className="bg-green-400 text-white hover:bg-green-600">buton buton buton</Button>
     </>
   )
 }
