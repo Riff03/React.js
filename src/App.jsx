@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './App.module.css'
 import Button from './components/Button'
 function App() {
@@ -9,13 +10,12 @@ function App() {
         justifyContent: 'space-between',
         fontSize: '50px'
       }}>
-        <a href="#" className={styles.link}>Test</a>
         
-        <div className="">
-          <a href="" className={styles.link}>11111111</a>
-          <a href="" className={styles.link}>22222222</a>
-          <a href="" className={styles.link}>33333333</a>
-          <a href="" className={styles.link}>44444444</a>
+        <div className={styles.link}>
+          <Link to="/" className={styles.link}>Home</Link>
+          <Link to="/Menu" className={styles.link}>Menu</Link>
+          <Link to="/Order" className={styles.link}>Order</Link>
+          <Link to="/AboutUs" className={styles.link}>About Us</Link>
          
         </div>
 
